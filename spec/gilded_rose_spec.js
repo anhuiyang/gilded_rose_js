@@ -78,4 +78,25 @@ describe("Gilded Rose", function() {
     expect(items[0].sellIn).toEqual(-1);
     expect(items[0].quality).toEqual(23);
   });
+  it("should Conjured, 0, 0", function() {
+    const gildedRose = new Shop([ new Item("Conjured", 0, 0)])
+    const item = gildedRose.updateQuality();
+    expect(item[0].name).toEqual("Conjured")
+    expect(item[0].sellIn).toEqual(-1)
+    expect(item[0].quality).toEqual(0)
+  })
+  it("should Conjured, 5, 25", function() {
+    const gildedRose = new Shop([ new Item("Conjured", 5, 25)])
+    const item = gildedRose.updateQuality();
+    expect(item[0].name).toEqual("Conjured")
+    expect(item[0].sellIn).toEqual(4)
+    expect(item[0].quality).toEqual(23)
+  })
+  it("should Conjured, 0, 25", function() {
+    const gildedRose = new Shop([ new Item("Conjured", 0, 25)])
+    const item = gildedRose.updateQuality();
+    expect(item[0].name).toEqual("Conjured")
+    expect(item[0].sellIn).toEqual(-1)
+    expect(item[0].quality).toEqual(21)
+  })
 });
