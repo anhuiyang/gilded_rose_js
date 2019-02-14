@@ -57,25 +57,25 @@ describe("Gilded Rose", function() {
     expect(items[0].sellIn).toEqual(2);
     expect(items[0].quality).toEqual(50);
   });
-  // it("should foo, 0, 0", function() {
-  //   const gildedRose = new Shop([ new Item("foo", 0, 0) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("foo");
-  //   expect(items[0].sellIn).toEqual(-1);
-  //   expect(items[0].quality).toEqual(0);
-  // });
-  // it("should foo, 5, 25", function() {
-  //   const gildedRose = new Shop([ new Item("foo", 5, 25) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("foo");
-  //   expect(items[0].sellIn).toEqual(4);
-  //   expect(items[0].quality).toEqual(24);
-  // });
-  // it("should foo, 0, 25", function() {
-  //   const gildedRose = new Shop([ new Item("foo", 0, 25) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("foo");
-  //   expect(items[0].sellIn).toEqual(-1);
-  //   expect(items[0].quality).toEqual(23);
-  // });
+  it("should foo, 0, 0", function() {
+    const gildedRose = new Shop([ new Item("foo", 0, 0) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("foo");
+    expect(items[0].sellIn).toEqual(-1);
+    expect(items[0].quality).toEqual(0);
+  });
+  it("should foo, 5, 25", function() {
+    const gildedRose = new Shop([ new Item("foo", 5, 25) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("foo");
+    expect(items[0].sellIn).toEqual(4);
+    expect(items[0].quality).toEqual(24);
+  });
+  it("should foo, 0, 25", function() {
+    const gildedRose = new Shop([ new Item("foo", 0, 25) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("foo");
+    expect(items[0].sellIn).toEqual(-1);
+    expect(items[0].quality).toEqual(23);
+  });
 });
