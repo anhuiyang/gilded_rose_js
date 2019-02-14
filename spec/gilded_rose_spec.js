@@ -29,34 +29,34 @@ describe("Gilded Rose", function() {
     expect(items[0].sellIn).toEqual(-1);
     expect(items[0].quality).toEqual(50);
   });
-  // it("Backstage passes to a TAFKAL80ETC concert, 0, 49", function() {
-  //   const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 0, 49) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
-  //   expect(items[0].sellIn).toEqual(-1);
-  //   expect(items[0].quality).toEqual(0);
-  // });
-  // it("Backstage passes to a TAFKAL80ETC concert, 7, 25", function() {
-  //   const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 7, 25) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
-  //   expect(items[0].sellIn).toEqual(6);
-  //   expect(items[0].quality).toEqual(27);
-  // });
-  // it("Backstage passes to a TAFKAL80ETC concert, 3, 25", function() {
-  //   const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 3, 25) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
-  //   expect(items[0].sellIn).toEqual(2);
-  //   expect(items[0].quality).toEqual(28);
-  // });
-  // it("Backstage passes to a TAFKAL80ETC concert, 3, 48", function() {
-  //   const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 3, 48) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
-  //   expect(items[0].sellIn).toEqual(2);
-  //   expect(items[0].quality).toEqual(50);
-  // });
+  it("Backstage passes to a TAFKAL80ETC concert, 0, 49", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 0, 49) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
+    expect(items[0].sellIn).toEqual(-1);
+    expect(items[0].quality).toEqual(0);
+  });
+  it("Backstage passes to a TAFKAL80ETC concert, 7, 25", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 7, 25) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
+    expect(items[0].sellIn).toEqual(6);
+    expect(items[0].quality).toEqual(27);
+  });
+  it("Backstage passes to a TAFKAL80ETC concert, 3, 25", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 3, 25) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
+    expect(items[0].sellIn).toEqual(2);
+    expect(items[0].quality).toEqual(28);
+  });
+  it("Backstage passes to a TAFKAL80ETC concert, 3, 48", function() {
+    const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 3, 48) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Backstage passes to a TAFKAL80ETC concert");
+    expect(items[0].sellIn).toEqual(2);
+    expect(items[0].quality).toEqual(50);
+  });
   // it("should foo, 0, 0", function() {
   //   const gildedRose = new Shop([ new Item("foo", 0, 0) ]);
   //   const items = gildedRose.updateQuality();

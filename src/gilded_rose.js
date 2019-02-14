@@ -12,21 +12,53 @@ class Shop {
   }
   updateQuality() {
     this.items.forEach(function(item){
-      if (item.name == 'Sulfuras, Hand of Ragnaros'){
-      } else if(item.name == 'Aged Brie'){
+      switch(item.name){
+        case 'Sulfuras, Hand of Ragnaros':
+          break;
+        case 'Aged Brie':
         item.sellIn -= 1
         if (item.sellIn > -1){
           item.quality += 1;
-          if (item.quality >= 50){
-            item.quality = 50
-          }
         } else {
           item.quality += 2;
-          if (item.quality >= 50){
-            item.quality = 50
-          }
         }
+        if (item.quality >= 50){
+          item.quality = 50
+        }
+          break;
+        case 'Backstage passes to a TAFKAL80ETC concert':
+        item.sellIn -= 1
+        if (item.sellIn < 0){
+          item.quality = 0
+        } else if(item.sellIn <= 5){
+          item.quality += 3
+        } else if(item.sellIn <= 10){
+          item.quality += 2
+        } else{
+          item.quality +=1
+        }
+        if (item.quality >= 50){
+          item.quality = 50
+        }
+          break;
+        
       }
+      // if (item.name == 'Sulfuras, Hand of Ragnaros'){
+      // } else if(item.name == 'Aged Brie'){
+      //   item.sellIn -= 1
+      //   if (item.sellIn > -1){
+      //     item.quality += 1;
+      //     if (item.quality >= 50){
+      //       item.quality = 50
+      //     }
+      //   } else {
+      //     item.quality += 2;
+      //     if (item.quality >= 50){
+      //       item.quality = 50
+      //     }
+      //   }
+      // } else if(item.name ==)
+
       // if (item.name != 'Aged Brie' && item.name != 'Backstage passes to a TAFKAL80ETC concert') {
       //   if (item.quality > 0) {
       //     if (item.name != 'Sulfuras, Hand of Ragnaros') {
