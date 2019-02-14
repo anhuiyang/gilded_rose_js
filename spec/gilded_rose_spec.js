@@ -8,27 +8,27 @@ describe("Gilded Rose", function() {
     expect(items[0].sellIn).toEqual(null);
     expect(items[0].quality).toEqual(80);
   });
-  // it("should Aged Brie, 10, 25", function() {
-  //   const gildedRose = new Shop([ new Item("Aged Brie", 10, 25) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Aged Brie");
-  //   expect(items[0].sellIn).toEqual(9);
-  //   expect(items[0].quality).toEqual(26);
-  // });
-  // it("should Aged Brie, 0, 25", function() {
-  //   const gildedRose = new Shop([ new Item("Aged Brie", 0, 25) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Aged Brie");
-  //   expect(items[0].sellIn).toEqual(-1);
-  //   expect(items[0].quality).toEqual(27);
-  // });
-  // it("should Aged Brie, 0, 49", function() {
-  //   const gildedRose = new Shop([ new Item("Aged Brie", 0, 49) ]);
-  //   const items = gildedRose.updateQuality();
-  //   expect(items[0].name).toEqual("Aged Brie");
-  //   expect(items[0].sellIn).toEqual(-1);
-  //   expect(items[0].quality).toEqual(50);
-  // });
+  it("should Aged Brie, 10, 25", function() {
+    const gildedRose = new Shop([ new Item("Aged Brie", 10, 25) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Aged Brie");
+    expect(items[0].sellIn).toEqual(9);
+    expect(items[0].quality).toEqual(26);
+  });
+  it("should Aged Brie, 0, 25", function() {
+    const gildedRose = new Shop([ new Item("Aged Brie", 0, 25) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Aged Brie");
+    expect(items[0].sellIn).toEqual(-1);
+    expect(items[0].quality).toEqual(27);
+  });
+  it("should Aged Brie, 0, 49", function() {
+    const gildedRose = new Shop([ new Item("Aged Brie", 0, 49) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toEqual("Aged Brie");
+    expect(items[0].sellIn).toEqual(-1);
+    expect(items[0].quality).toEqual(50);
+  });
   // it("Backstage passes to a TAFKAL80ETC concert, 0, 49", function() {
   //   const gildedRose = new Shop([ new Item("Backstage passes to a TAFKAL80ETC concert", 0, 49) ]);
   //   const items = gildedRose.updateQuality();
