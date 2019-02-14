@@ -41,6 +41,17 @@ class Shop {
           item.quality = 50
         }
           break;
+          case 'Conjured':
+          item.sellIn -= 1
+          if (item.sellIn < 0){
+            item.quality -= 4
+          }else{
+            item.quality -= 2
+          }
+          if(item.quality < 0){
+            item.quality = 0
+          }
+            break;
         default:
         item.sellIn -= 1
         if (item.sellIn < 0){
